@@ -1,0 +1,91 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  width: 50px;
+  margin-top: 150px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .4);
+}
+
+nav li {
+  height: 70px;
+  position: relative;
+}
+
+nav li a {
+  /*color: white;*/
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  padding-left: 25%;
+  border-bottom: 1px solid rgba(0, 0, 0, .4);
+  transition: all .3s linear;
+}
+
+nav li:nth-child(1) a {
+  background: #4267B2;
+}
+
+nav li:nth-child(2) a {
+  background: #1DA1F2;
+}
+
+nav li:nth-child(3) a {
+  background: #E1306C;
+}
+
+nav li:nth-child(4) a {
+  background: #2867B2;
+}
+
+nav li:nth-child(5) a {
+  background: #333;
+}
+
+nav li:nth-child(6) a {
+  background: #ff0000;
+}
+
+nav li a i {
+  position: absolute;
+  top: 50%; /* Adjusted value */
+  transform: translateY(-50%); /* Added to center the icons */
+  left: 20px;
+  font-size: 27px;
+}
+
+nav li a span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: none;
+}
+
+a:hover {
+  z-index: 1;
+  width: 200px;
+  border-bottom: 1px solid rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+ul li a:hover span {
+  display: block;
+  padding-right: 30%;
+}
